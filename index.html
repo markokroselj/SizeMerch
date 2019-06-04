@@ -9,32 +9,118 @@
     <title>SizeMerch</title>
 </head>
 <body>
-   <header>
-       <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-       </nav>
-       <div id="ab">
- <div id="description">
-     <h1>SizeMerch</h1>
-    <p>Customizable shirts, socks, jackets and much more!</p>
-</div> <img src="assets/images/logo-350px-transparent.png">
-</div>
-<img src="products/basic-Tshirt.png" id="tshirt"> <button id="btn"><a href="#"><i class="fas fa-shopping-cart"></i>
-    Buy now!</a></button>
+    <header>
+            <div id="logo">Sizemerch</div>
+        <nav>
+           
+         <a href="">About</a>
+         <a href="">Contact us</a>
+         <a href="">Buy gift cad</a>
+         <a href=""><i class="fas fa-shopping-cart"></i></a>
+         </nav>
+            <div id="login">Login: <img src="assets/images/facebook.png"><img src="assets/images/btn_google_signin_light_normal_web.png"></div>
+       
     </header>
-    <!-- end of header -->
-   <!-- main section-->
- <section>
-     <h2>what we do </h2>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur assumenda laborum maxime eum culpa sequi enim minus ipsa eius! Dolor at dolorem, impedit ipsam porro, odit nulla facilis omnis velit, et voluptas. Ad officiis ducimus saepe, ipsam architecto quia perferendis nobis, tenetur velit sint voluptate.</p>
- </section>
- <footer>  
-        <p>SizeMerch &copy 2019</p>
-        <p id="author">website created by <a href="http://markokroselj.atwebpages.com" target="_blank">Marko Krošelj</a></p>
-</footer>
+<div id="content">
+    <div id="products">
+        <div class="items"><a href="">t-shirts</a></div>
+        <div class="items"><a href="">hoodies</a></div>
+        <div class="items"><a href="">socks</a></div>
+        <div class="items"><a href="javascript:void(0)" onclick="paketi()">package</a></div>
+        <div id="packages">
+            <div class="pitems"><a href="">valetni paket</a></div>
+            <div class="pitems"><a href="">maturantski ples</a></div>
+            <div class="pitems"><a href="">družinski paket</a></div>
+            <div class="pitems"><a href="">poslovni paket</a></div>
+            <div class="pitems"><a href="">fantovski paket</a></div>
+            <div class="pitems"><a href="">dekliški paket</a></div>
+        </div>
+
+        <div class="items"><a href="">events</a></div>
+    </div>
+    <div id="social">
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-discord"></i></a>
+    </div>
+</div>
+<script>
+    function paketi() {
+ 
+  var moreText = document.getElementById("packages");
+
+
+  if (moreText.style.display === "none") {
+  
+    moreText.style.display = "block";
+  } else {
+   
+    moreText.style.display = "none";
+  }
+}
+   </script>
+<div id="about">
+    <h1>About</h1>
+    <div id="wrapper">
+            <div id="abText">
+                <p>A small company with passion for style, street wear and goals</p>
+                 <p>We make custum T-shirts, socks, hoodies and much more.</p>
+                <p>
+            </div>
+            <div><img src="products/61008659_325340481496403_1458758974634459136_n.jpg"></div> 
+    </div>
+</div>
+    <div class="slideshow-container">
+
+        <div class="mySlides"><a href="/products/61008659_325340481496403_1458758974634459136_n.jpg"><img src="/products/61008659_325340481496403_1458758974634459136_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61010170_338424910203097_507900743408156672_n.jpg"><img src="products/61122303_327902817887940_6271312057920913408_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61161500_2054857721486149_8218793789209182208_n.jpg"><img src="/products/61161500_2054857721486149_8218793789209182208_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61162349_2372160233028121_6241427675475345408_n.jpg"><img src="/products/61162349_2372160233028121_6241427675475345408_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61179878_642928542845754_1905867277761249280_n.jpg"><img src="/products/61179878_642928542845754_1905867277761249280_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61199153_377872092858390_6089151065989578752_n.jpg"><img src="/products/61199153_377872092858390_6089151065989578752_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61258373_2267549186819239_6790675128444256256_n.jpg"><img src="products/61258373_2267549186819239_6790675128444256256_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61323426_469135000560578_9213065425309401088_n.jpg"><img src="/products/61323426_469135000560578_9213065425309401088_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61337051_2556668931035650_5359055944779038720_n.jpg"><img src="/products/61337051_2556668931035650_5359055944779038720_n.jpg" alt=""></a></div>
+        <div class="mySlides"><a href="/products/61509838_624272138048181_3870694346143563776_n.jpg"><img src="/products/61509838_624272138048181_3870694346143563776_n.jpg" alt=""></a></div>
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+          
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+             
+              slides[slideIndex-1].style.display = "block";  
+             
+            }
+            </script>
+   <div id="contact">
+       <h3>contact</h3>
+       <p>sizemerch@gmail.com</p>
+   </div>
+   <footer>
+       <p>Sizemerch &copy; 2019</p>
+   </footer>
 </body>
 </html>
